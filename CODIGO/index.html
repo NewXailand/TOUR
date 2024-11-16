@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="icon" href="CODIGO\IMAGENES\LOGO.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\navbar.css">
+    <link rel="stylesheet" href="css\offcanvas.css">
+
+    <script src="js/main.js" defer></script>
+    
+</head>
+<body style="background-image: url(CODIGO/IMAGENES/FONDO.png) ; margin: 10; padding: 100; height: 100%; display: flex; flex-direction: column; overflow-y: auto;">
+
+    <!-- Navbar  -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#ventajas">Sistema de Energia Solar</a></li>
+            <li><a href="#profesores"></a></li>
+        </ul>
+        <button id="openOffcanvas" class="btn-open">Viaje Solar</button>
+    </nav>
+
+    <!-- Offcanvas -->
+    <div id="offcanvas" class="offcanvas">
+        <button class="close-offcanvas" id="closeOffcanvas">&times;</button>
+        <div class="offcanvas-content" style="text-align: center;">
+            <img src="CODIGO\IMAGENES\LOGO.png" alt="Imagen del Tour Virtual" class="tour-image">
+            <div style="background-color: #1A2B4C; border-radius: 30px; padding: 20px; margin: 20px 0;">
+                <p class="offcanvas-text" style="color: white;">Es hora de conocer todos los detalles sobre nuestro sistema de energia solar.</p>
+            </div>
+            <button id="tourButton" class="btn-tour">
+                <span class="material-icons">play_circle</span> Iniciar
+            </button>
+        </div>
+    </div>
+
+    <!-- Secciones de la página -->
+    <div style="max-width: 1000px; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0 auto;background-image: url(C:\Users\vasqu\Videos\TOUR_VIRTUAL_SALA_SISTEMAS\IMAGENES\colegio2.png);">
+        <section id="ventajas" style="background-color: #f7f9fc; padding: 40px; border-radius: 10px; box-shadow: 0 32px 64px rgba(0, 0, 0, 0.1); border: 3px solid #e0e0e0; margin-top: 50px; width: 100%;">
+            <div class="RECUADROS">
+            <h2 style="text-align: center; line-height: 1.5; margin-bottom: 20px; color: white; font-size: 40px;">Paneles Solares</h2>
+            </div>
+            <DIV style="display: flex;justify-content: center;align-items: center;">
+            <img CLASS= "VIDEOS" SRC="CODIGO\IMAGENES\PANEL SOLAR.jpg" alt="PANELES">
+            </DIV>
+            <p CLASS="JUSTIFICAR">
+                Son dispositivos que convierten la luz solar en electricidad mediante el efecto fotovoltaico. Están hechos de celdas de silicio que generan 
+                corriente continua (CC) cuando les llega luz solar. Un inversor transforma esta energía en corriente alterna (CA), que es la que usamos en casa.
+                Tipos principales:
+                Monocristalinos: Más eficientes, ideales para espacios pequeños.
+                Policristalinos: Más económicos, para áreas grandes.
+                Película delgada: Flexibles, aunque menos eficientes, usados en techos especiales o portátiles.
+                Son una opción ecológica para ahorrar energía y reducir emisiones contaminantes.</p>
+        </section>
+
+        <section id="profesores" style="background-color: #f7f9fc; padding: 40px; border-radius: 10px; box-shadow: 0 32px 64px rgba(0, 0, 0, 0.1); border: 3px solid #e0e0e0; margin-top: 50px; width: 100%;">
+            <h2 style="text-align: center; line-height: 1.5; margin-bottom: 20px; color: #1A2B4C; font-size: 32px;">Cableado Solar</h2>
+            <p style="line-height: 1.8; margin-bottom: 30px; color: #333333; font-size: 25px; margin-bottom: 25px;">En el Instituto Técnico Santa Rosa de Lima, los docentes desempeñan un papel fundamental en la formación integral de los estudiantes. Su dedicación diaria va más allá de la enseñanza de contenidos académicos, ya que fomentan valores, habilidades técnicas y personales que preparan a los jóvenes para enfrentar los retos del mundo moderno. Con compromiso y paciencia, los docentes adaptan sus métodos a las necesidades de cada estudiante, promoviendo un ambiente de aprendizaje inclusivo y motivador. Su esfuerzo constante es clave para el crecimiento tanto académico como humano de quienes asisten al instituto, convirtiendo su labor en una piedra angular del desarrollo educativo y social.</p>
+        </section>
+    </div>
+
+    <!-- Video Introductorio -->
+    <video id="introVideo" class="hidden-video" playsinline>
+        <source src="videos/Entrada Corregida 02.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de videos.
+    </video>
+
+    <!-- Pie de página -->
+    <footer style="background-color: #1A2B4C; color: white; padding: 5px; text-align: center; position: relative; width: 100%; margin-top: 50px;">
+        <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <p style="margin-right: 20px;">
+                <a href="mailto:contacto@tuempresa.com" style="color: white; text-decoration: none;">Contáctanos</a> |
+                <a href="https://www.tuempresa.com/privacidad" style="color: white; text-decoration: none;">Política de Privacidad</a>
+            </p>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+                <img src="images/LOGO LINGUASKILL.png" alt="LINGUASKILL">
+                <img src="images/LOGO SENA.jpeg" alt="SENA">
+                <img src="images/SANTILLANA.png" alt="SANTILLANA">
+                <img src="images/LOGO MILTON OCHOA.jpeg" alt="MILTON OCHOA">
+                <img src="images/UIBAGUE.png" alt="Universidad de Ibagué">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
