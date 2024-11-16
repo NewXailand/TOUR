@@ -9,7 +9,6 @@ body, html {
 /* Añadir centrado y justificación de texto */
 .section p {
    text-align: justify;
-    margin: 0 auto;
     width: 90%; /* Ajustar el ancho del texto */
 }
 
